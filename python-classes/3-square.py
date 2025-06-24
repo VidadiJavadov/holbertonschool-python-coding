@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
 """This Square class code"""
-
-
 class Square:
     """in this class we will get size"""
 
@@ -27,8 +25,17 @@ class Square:
 
     def size(self, value):
         """this is setter"""
-        
-        self.__size = value
+
+        if not isinstance(value, int):
+
+            raise TypeError("size must be an integer")
+
+        if value < 0:
+
+            raise ValueError("size must be >= 0")
+
+        else:
+            self.__size = value
 
     def area(self):
         """This a function wchich returns area of square"""
