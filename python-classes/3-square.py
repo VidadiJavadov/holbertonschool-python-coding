@@ -24,7 +24,6 @@ class Square:
     def size(self):
         """This is getter"""
         return self.__size
-
     @size.setter
     def size(self, value):
         """this is setter"""
