@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 """This Square class code"""
+
+
 class Square:
     """in this class we will get size"""
 
@@ -18,11 +20,13 @@ class Square:
         else:
             self.__size = size
     
+    @property
     def size(self):
         """This is getter"""
 
         return self.__size
 
+    @size.setter
     def size(self, value):
         """this is setter"""
 
