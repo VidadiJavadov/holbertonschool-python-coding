@@ -43,15 +43,10 @@ class Square:
 
         return self.__size ** 2
     
-    def my_print(self):
-        """This is a function that prints square with # symbols"""
-        
+     def my_print(self):
+        """This function prints the square with # symbols."""
         if self.__size == 0:
-             
             print()
-            
         else:
-            
-            for i in range(self.__size):
-                
-                print(self.__size * "#")
+            for _ in range(self.__size):
+                print("#" * self.__size)
